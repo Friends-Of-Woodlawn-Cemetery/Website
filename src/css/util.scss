@@ -58,3 +58,11 @@
 button {
     cursor: pointer;
 }
+
+.rounded-1 {
+    border-radius: 0.25rem;
+}
+
+.border-secondary-3 {
+    border: 3px solid hsla(350, 50%, 40%, 1);
+}
