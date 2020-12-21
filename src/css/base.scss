@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+
+    background: hsla(46, 51%, 98%, 1);
+
+    min-height: 100vh;
+
+    width: 100vw;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &>header {
+        flex: 0 0 auto;
+    }
+
+    &>main {
+        flex: 1 0 auto;
+
+        padding-top: 15rem;
+
+        &.hero-nomargin {
+            padding-top: 0;
+        }
+
+        &>*:not(.hero-nomargin) {
+            width: MIN(1200px, 100vw);
+            margin: 0 auto;
+
+            padding: 2rem 4rem;
+
+            background: hsla(46, 51%, 93%, 1);
+        }
+    }
+
+    &>footer {
+        width: 100%;
+
+        background: hsla(46, 51%, 80%, 1);
+    }
+}

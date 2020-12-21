@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+body>header {
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    z-index: 100;
+
+    .header-top {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: stretch;
+        background: hsla(46, 51%, 93%, 1);
+
+        font-size: 1.25rem;
+
+        // Border crud
+        box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+
+
+        .header-donate {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            color: hsla(46, 51%, 98%, 1);
+            background: hsla(200, 51%, 41%, 1);
+
+            // border-top-right-radius: 0.25rem;
+            // border-bottom-right-radius: 0.5rem;
+
+            font-weight: 900;
+
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            &:hover {
+                background: hsla(200, 61%, 51%, 1);
+            }
+        }
+        
+        .header-title {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            padding: 1rem 1rem;
+
+            color: hsla(0, 0%, 20%, 1);
+
+            font-weight: 900;
+            font-size: CLAMP(1.5rem, 2.5vw, 4rem);
+            letter-spacing: 0.33rem;
+
+            transition: font-size 0.33s ease-in-out;
+
+            &.short {
+                font-size: CLAMP(1.5rem, 1.5vw, 2rem);
+            }
+        }
+
+        .header-gravesite {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            color: hsla(46, 51%, 98%, 1);
+
+            background: hsla(350, 50%, 40%, 1);
+            font-weight: 900;
+
+            cursor: pointer;
+            text-decoration: none;
+
+            // border-top-left-radius: 0.5rem;
+            // border-bottom-left-radius: 0.5rem;
+
+
+            &:hover {
+                background: hsla(350, 60%, 50%, 1);
+                i {
+                    animation: flip 0.5s 2 ease-in-out alternate;
+                }
+
+                @keyframes flip {
+                    from {transform: scaleX(1);}
+                    to {transform: scaleX(-1);}
+                }
+            }
+        }
+    }
+
+    .header-buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+
+        @media screen and (max-width: 720px) {
+            &>* {
+                padding: 0.5rem 1.5rem;
+                font-size: 0.75rem
+            }
+        }
+        @media screen and (max-width: 1060px) and (min-width: 720px) {
+            &>* {
+                padding: 1rem 1.5rem;
+                font-size: 1rem
+            }
+        }
+        @media screen and (min-width: 1060px) {
+            &>* {
+                padding: 1rem 3rem;
+                font-size: 1.25rem;
+            }
+        }
+
+        :first-child {
+            border-bottom-left-radius: 0.125rem;
+        }
+        :last-child {
+            border-bottom-right-radius: 0.125rem;
+        }
+
+        &>* {
+    
+            color: black;
+            background: hsla(206, 81%, 98%, 1);
+            box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+            text-decoration: none;
+
+            cursor: pointer;
+
+            &:hover {
+                box-shadow: 0 3px 5px hsla(0, 0%, 0%, .2);
+                background: hsla(206, 81%, 93%, 1);
+            }
+        }
+
+    }
+}

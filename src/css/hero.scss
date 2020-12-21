@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+main section.hero-banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    font-family: 'Merriweather';
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+
+    padding-top: 10rem;
+
+    @media screen and (max-width: 1060px) {
+        height: 30rem;
+    }
+    @media screen and (min-width: 1060px) {
+        height: 45rem;
+    }
+
+
+    background: url('https://upload.wikimedia.org/wikipedia/commons/f/f9/Woodland_Cemetery_Cleveland_Ohio.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        @media screen and (max-width: 1060px) {
+            height: 30rem;
+        }
+        @media screen and (min-width: 1060px) {
+            height: 45rem;
+        }
+        backdrop-filter: saturate(80%) sepia(40%);
+    }
+
+
+    .tagline-box {
+        color: hsla(46, 51%, 93%, 1);
+        background: hsla(60, 20%, 20%, 0.5);
+        backdrop-filter: blur(3px);
+
+        padding: clamp(0.3rem, 0.75vw, 2rem) clamp(1rem, 2.5vw, 3rem);
+        font-size: clamp(1.5rem, 2.5vw, 3rem);
+
+
+
+        border-bottom: 3px solid hsla(46, 51%, 93%, 1);
+
+        text-transform: uppercase;
+    }
+}
