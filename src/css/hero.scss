@@ -13,12 +13,15 @@ main section.hero-banner {
 
     padding-top: 10rem;
 
+
     @media screen and (max-width: 1060px) {
+        padding-top: 15rem;
         height: 30rem;
     }
     @media screen and (min-width: 1060px) {
         height: 45rem;
     }
+    
 
 
     background: url('https://upload.wikimedia.org/wikipedia/commons/f/f9/Woodland_Cemetery_Cleveland_Ohio.jpg');

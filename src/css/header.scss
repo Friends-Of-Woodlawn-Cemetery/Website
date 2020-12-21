@@ -13,8 +13,6 @@ body>header {
     .header-top {
         width: 100%;
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
         align-items: stretch;
         background: hsla(46, 51%, 93%, 1);
 
@@ -22,6 +20,17 @@ body>header {
 
         // Border crud
         box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
+
+        @media screen and (max-width: 720px) {
+            flex-flow: column nowrap;
+            align-items: stretch;
+        }
+
+        @media screen and (min-width: 720px) {
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+        }
 
 
         .header-donate {
@@ -109,7 +118,7 @@ body>header {
         @media screen and (max-width: 720px) {
             &>* {
                 padding: 0.5rem 1.5rem;
-                font-size: 0.75rem
+                font-size: 0.5rem
             }
         }
         @media screen and (max-width: 1060px) and (min-width: 720px) {
