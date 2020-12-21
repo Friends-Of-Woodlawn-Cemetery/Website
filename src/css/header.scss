@@ -112,7 +112,7 @@ body>header {
 
     .header-buttons {
         display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: center;
 
         @media screen and (max-width: 720px) {
