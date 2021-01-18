@@ -2,6 +2,14 @@
     max-width: 30rem;
 }
 
+.max-w-20 {
+    max-width: 20rem;
+}
+
+.m-r-3 {
+    margin-right: 3rem;
+}
+
 .m-t-1 {
     margin-top: 1rem;
 }
@@ -43,8 +51,16 @@
     flex-flow: row wrap;
 }
 
+.justify-self-start {
+    justify-self: flex-start;
+}
+
 .space-around {
     justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
 }
 
 .align-items-center {
