@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "papaparse": "^5.3.0",
+    "vue": "^2.6.12",
+    "vue-good-table": "^2.21.4",
     "webpack": "^5.9.0",
     "webpack-cli": "^4.2.0"
   },
@@ -17,18 +20,16 @@
     "postcss-loader": "^4.1.0",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
-    "style-loader": "^2.0.0"
+    "style-loader": "^2.0.0",
+    "vuepress": "^1.8.2"
   },
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Friends-Of-Woodlawn-Cemetery/Website.git"
-  },
-  "author": "",
+  "repository": "git+https://github.com/Friends-Of-Woodlawn-Cemetery/Website.git",
+  "author": "Alex Sterling <sterlingalex@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Friends-Of-Woodlawn-Cemetery/Website/issues"

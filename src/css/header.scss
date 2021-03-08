@@ -14,7 +14,7 @@ body>header {
         width: 100%;
         display: flex;
         align-items: stretch;
-        background: hsla(46, 51%, 93%, 1);
+        background: #23483d;
 
         font-size: 1.25rem;
 
@@ -39,7 +39,7 @@ body>header {
             justify-content: center;
             align-items: center;
             padding: 1rem 2rem;
-            color: hsla(46, 51%, 98%, 1);
+            color: #f2f4e6;
             background: hsla(200, 51%, 41%, 1);
 
             // border-top-right-radius: 0.25rem;
@@ -65,7 +65,7 @@ body>header {
 
             padding: 1rem 1rem;
 
-            color: hsla(0, 0%, 20%, 1);
+            color: #f2f4e6;
 
             font-weight: 900;
             font-size: CLAMP(1.5rem, 2.5vw, 4rem);
@@ -84,7 +84,7 @@ body>header {
             justify-content: center;
             align-items: center;
             padding: 1rem 2rem;
-            color: hsla(46, 51%, 98%, 1);
+            color: #f2f4e6;
 
             background: hsla(350, 50%, 40%, 1);
             font-weight: 900;
@@ -144,7 +144,7 @@ body>header {
         &>* {
     
             color: black;
-            background: hsla(206, 81%, 98%, 1);
+            background: #f2f4e6;
             box-shadow: 0 1px 3px hsla(0, 0%, 0%, .2);
             text-decoration: none;
 
@@ -152,7 +152,7 @@ body>header {
 
             &:hover {
                 box-shadow: 0 3px 5px hsla(0, 0%, 0%, .2);
-                background: hsla(206, 81%, 93%, 1);
+                background: #dbdfc6;
             }
         }
 

@@ -12,8 +12,7 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
   
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
+  <!-- <link rel="apple-touch-icon" href="icon.png"> -->
   <!-- Place favicon.ico in the root directory -->
   
   <link rel="stylesheet" href="/css/normalize.css">
@@ -37,7 +36,7 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="links.html">Useful Links</a>
-      <a href="donate.html">Support</a>
+      <a href="membership.html">Membership</a>
       <a href="history.html">History</a>
       <a href="gallery.html">Gallery</a>
       <a href="contact.html">Contact</a>
@@ -59,6 +58,22 @@
         honor the final resting places for loved ones; and afford a reflective,
         welcoming space for the entire community.
       </p>
+
+      <h2>Sponsor: Midwest Everlasting Memorials</h2>
+      <a href="https://www.midwesteverlastingmemorials.com/"><img src="/img/midwestsponsor1.jpg"/></a>
+      <p class="readable">
+        We have been graciously sponsored by Midwest Everlasting Memorials.  Their family owned full service memorial company is located in Wadsworth at <a href="https://www.midwesteverlastingmemorials.com/contact">1244 High Street (Rt. 94)</a>
+        Their professional staff design, engrave and deliver your family's monument all here in Wadsworth.  Their beautiful selection of headstones includes Upgright, Flat Markets, Slant Monuments, Bronze and Custom Headstones.
+        For more information about Midwest Everlasting Memorials, <a href="https://www.midwesteverlastingmemorials.com/">visit their website</a>
+      </p>
+      <a href="https://www.midwesteverlastingmemorials.com/"><img src="/img/midwestsponsor2.jpg"/></a>
+
+
+      <h2>Search our Internment Records</h2>
+      <div class="flex-row" id="internment-app">
+        <vue-good-table :columns="columns" :rows="records" :pagination-options="paginationOptions" :search-options="searchOptions"></vue-good-table>
+      </div>
+
       <div class="flex-row">
         <div class="max-w-30 m-r-3 flex-column">
           <h1>The Last To Let You Down</h1>
@@ -99,29 +114,27 @@
             If you are thinking of joining us, don't hesitate to contact us!
           </p><br/><br/>
           <div class="row align-self-stretch">
-            <a href="donate.html" class="button-primary">Donate</a>
-            <a href="https://www.facebook.com/friendsofwoodlawncemetery/"><i class="fab fa-facebook fa-3x color-primary"></i></a>
-            <a href="contact.html" class="button-primary">Contact Us</a>
+            <a href="donate.html" class="button-secondary">Donate</a>
+            <a href="https://www.facebook.com/friendsofwoodlawncemetery/"><i class="fab fa-facebook fa-3x color-secondary"></i></a>
+            <a href="contact.html" class="button-secondary">Contact Us</a>
           </div>
         </div>
       </div>
       <div class="hr-bar m-t-1"></div>
       <div class="row p-y-1 align-items-center">
-        <div class="text-align-center color-primary">
+        <div class="text-align-center color-secondary">
           ©2020 Friends of Woodlawn Cemetery.<br/>
-          All Rights Reserved.
+          All Rights Res.
         </div>
-        <div class="text-align-center color-primary">Website design and development by Alex Sterling.</div>
+        <div class="text-align-center color-secondary">Website design and development by Alex Sterling.</div>
       </div>
       <div class="hr-bar m-b-1"></div>
     </content>
   </footer>
-  <script id="__bs_script__">
-    //<![CDATA[
+  <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:8080/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
-      //]]>
-  </script>
-  <script src="/main.js"></script>
+  //]]></script>
+<script src="/main.js"></script>
 </body>
   
 </html>

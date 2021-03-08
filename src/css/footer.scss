@@ -9,9 +9,9 @@ body>footer {
         margin: 0 auto;
         padding: 2rem 4rem;
 
-        background: hsla(46, 51%, 85%, 1);
+        background: #23483d;
 
-        color: hsla(0, 0%, 50%, 1);
+        color: #f2f4e6;
 
         .row {
             display: flex;
@@ -38,19 +38,29 @@ body>footer {
 
         .monument-icon {
             font-size: 15rem;
-            color: hsla(200, 51%, 41%, 1);
+            color: #f2f4e6;
         }
 
         h3 {
-            color: hsla(0, 0%, 50%, 1);
+            color: #f2f4e6;
             font-size: 2rem;
+        }
+
+        p {
+            color: #f2f4e6;
         }
 
         .hr-bar {
 
-            border: 3px solid hsla(350, 50%, 40%, 1);
+            border: 3px solid #f2f4e6;
             border-radius: 3px;
             height: 6px;
         }
+
+        a {
+            color: #f2f4e6;
+        }
+
+        
     }
 }

@@ -20,3 +20,26 @@
         backdrop-filter: brightness(110%);
     }
 }
+
+.button-secondary {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    color: #f2f4e6;
+    border: 3px solid #f2f4e6;
+    border-radius: 0.5rem;
+    background: transparent;
+
+    padding: 0.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+
+    text-decoration: none;
+
+    &:hover {
+        backdrop-filter: brightness(160%);
+    }
+}

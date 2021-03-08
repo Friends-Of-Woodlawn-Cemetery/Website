@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-flow: column nowrap;
 
-    background: hsla(46, 51%, 98%, 1);
+    background: #fafcf0;
 
     min-height: 100vh;
 
@@ -30,13 +30,13 @@ body {
 
             padding: 2rem 4rem;
 
-            background: hsla(46, 51%, 93%, 1);
+            background: #f2f4e6;
         }
     }
 
     &>footer {
         width: 100%;
 
-        background: hsla(46, 51%, 80%, 1);
+        background: #23483d;
     }
 }
