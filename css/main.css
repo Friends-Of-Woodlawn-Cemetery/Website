@@ -468,9 +468,9 @@ main section.hero-banner {
   font-weight: 900;
   letter-spacing: 0.25rem;
   padding-top: 10rem;
-  background: url("https://www.timesreporter.com/storyimage/OH/20200522/NEWS/200529522/EP/1/7/EP-200529522.jpg");
+  background: url("/img/IMG_7549.jpeg");
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 90%;
 }
 @media screen and (max-width: 1060px) {
   main section.hero-banner {
@@ -489,7 +489,6 @@ main section.hero-banner::before {
   top: 0;
   left: 0;
   width: 100%;
-  backdrop-filter: saturate(80%) sepia(40%);
 }
 @media screen and (max-width: 1060px) {
   main section.hero-banner::before {
@@ -516,14 +515,15 @@ main section.hero-banner .tagline-box {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  color: #337a9e;
-  border: 3px solid #337a9e;
+  color: #23483d;
+  border: 3px solid #23483d;
   border-radius: 0.5rem;
   background: transparent;
   padding: 0.5rem;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  text-align: center;
   text-decoration: none;
 }
 .button-primary:hover {
@@ -543,10 +543,15 @@ main section.hero-banner .tagline-box {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.125rem;
+  text-align: center;
   text-decoration: none;
 }
 .button-secondary:hover {
   backdrop-filter: brightness(160%);
+}
+
+.button-small {
+  width: auto;
 }
 
 input[type=text], input[type=email], textarea {
@@ -591,6 +596,14 @@ p.readable, ul.readable {
 
 .max-w-20 {
   max-width: 20rem;
+}
+
+.m-r-1 {
+  margin-right: 1rem;
+}
+
+.m-r-2 {
+  margin-right: 2rem;
 }
 
 .m-r-3 {

@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
 
-    color: hsla(200, 51%, 41%, 1);
-    border: 3px solid hsla(200, 51%, 41%, 1);
+    color: #23483d;
+    border: 3px solid #23483d;
     border-radius: 0.5rem;
     background: transparent;
 
@@ -13,6 +13,7 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.125rem;
+    text-align: center;
 
     text-decoration: none;
 
@@ -36,10 +37,15 @@
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 0.125rem;
+    text-align: center;
 
     text-decoration: none;
 
     &:hover {
         backdrop-filter: brightness(160%);
     }
+}
+
+.button-small {
+    width: auto;
 }

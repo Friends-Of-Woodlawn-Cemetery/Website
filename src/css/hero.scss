@@ -24,9 +24,9 @@ main section.hero-banner {
     
 
 
-    background: url('https://www.timesreporter.com/storyimage/OH/20200522/NEWS/200529522/EP/1/7/EP-200529522.jpg');
+    background: url('/img/IMG_7549.jpeg');
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 50% 90%;
 
     &::before {
         content: '';
@@ -40,7 +40,6 @@ main section.hero-banner {
         @media screen and (min-width: 1060px) {
             height: 45rem;
         }
-        backdrop-filter: saturate(80%) sepia(40%);
     }
 
 
