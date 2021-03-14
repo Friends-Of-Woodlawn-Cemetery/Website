@@ -582,6 +582,10 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
+h3 {
+  font-size: 1.75rem !important;
+}
+
 p, ul {
   font-size: 1.125rem;
   color: #666666;
