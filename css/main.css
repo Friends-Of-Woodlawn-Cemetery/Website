@@ -716,3 +716,7 @@ button {
 .border-secondary-3 {
   border: 3px solid #993344;
 }
+
+.image-button {
+  cursor: pointer;
+}
