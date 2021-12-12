@@ -594,6 +594,14 @@ p.readable, ul.readable {
   max-width: 800px;
 }
 
+.max-w-60 {
+  max-width: 60rem;
+}
+
+.max-w-45 {
+  max-width: 45rem;
+}
+
 .max-w-30 {
   max-width: 30rem;
 }
