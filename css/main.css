@@ -710,6 +710,10 @@ p.readable, ul.readable {
   justify-self: flex-start;
 }
 
+.justify-self-center {
+  justify-self: center;
+}
+
 .space-around {
   justify-content: space-around;
 }
@@ -724,6 +728,10 @@ p.readable, ul.readable {
 
 .align-self-stretch {
   align-self: stretch;
+}
+
+.align-self-center {
+  align-self: center;
 }
 
 button {

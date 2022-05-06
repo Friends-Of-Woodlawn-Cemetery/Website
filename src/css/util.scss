@@ -114,6 +114,10 @@
     justify-self: flex-start;
 }
 
+.justify-self-center {
+    justify-self: center;
+}
+
 .space-around {
     justify-content: space-around;
 }
@@ -128,6 +132,10 @@
 
 .align-self-stretch {
     align-self: stretch;
+}
+
+.align-self-center {
+    align-self: center;
 }
 
 button {
