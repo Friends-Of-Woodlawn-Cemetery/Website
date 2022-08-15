@@ -50,28 +50,28 @@
     <section>
       <div class="flex-row space-around">
         <div>
-          <div class="max-w-30 flex-column">
+          <div class="max-w-30 flex-column" id="contact-message">
             <h1>Contact Us</h1>
             <strong class="color-primary">Email us at <a href="mailto:fwc789@gmail.com">fwc789@gmail.com</a></strong><br/>
             <strong class="color-primary">Or Send Us a Message</strong><br/>
-            <input type="text" placeholder="Your Name"/><br/>
-            <input type="email" placeholder="Your Email Address"/><br/>
-            <textarea width="100%" cols="40" rows="10" placeholder="Your Message"></textarea><br/>
+            <input type="text" placeholder="Your Name" id="message-name"/><br/>
+            <input type="email" placeholder="Your Email Address" id="message-email"/><br/>
+            <textarea width="100%" cols="40" rows="10" placeholder="Your Message" id="message-message"></textarea><br/>
             <button class="button-primary">Send Message</button>
           </div>
         </div>
         <div>
           <h1>Volunteer</h1>
-          <div class="max-w-30 flex-column">
-            <input type="text" placeholder="Your Name"/><br/>
-            <input type="email" placeholder="Your Email Address"/><br/>
+          <div class="max-w-30 flex-column" id="contact-volunteer">
+            <input type="text" placeholder="Your Name" id="volunteer-name"/><br/>
+            <input type="email" placeholder="Your Email Address" id="volunteer-email"/><br/>
             <h4>Select Volunteer Opportunies</h4>
-            <label><input type="checkbox" value="Headstone Cleaning"> - Headstone Cleaning</label><br/>
-            <label><input type="checkbox" value="Gardening"> - Gardening</label><br/>
-            <label><input type="checkbox" value="Community Events"> - Community Events</label><br/>
-            <label><input type="checkbox" value="Fundraising"> - Fundraising</label><br/>
+            <label><input class="volunteer-type" type="checkbox" value="Headstone Cleaning"> - Headstone Cleaning</label><br/>
+            <label><input class="volunteer-type" type="checkbox" value="Gardening"> - Gardening</label><br/>
+            <label><input class="volunteer-type" type="checkbox" value="Community Events"> - Community Events</label><br/>
+            <label><input class="volunteer-type" type="checkbox" value="Fundraising"> - Fundraising</label><br/>
             <h4>And/Or Suggest Other Volunteering Opportunities</h4>
-            <textarea width="100%" cols="40" rows="5" placeholder="Other Volunteering Opportunites"></textarea><br/>
+            <textarea width="100%" cols="40" rows="5" placeholder="Other Volunteering Opportunites" id="volunteer-message"></textarea><br/>
             <button class="button-primary">Volunteer</button>
           </div>
         </div>
@@ -113,6 +113,41 @@
     document.write("<script async src='http://HOST:8080/browser-sync/browser-sync-client.js?v=2.26.13'><\/script>".replace("HOST", location.hostname));
   //]]></script>
 <script src="/main.js"></script>
+<script>
+  const messageForm = document.querySelector('#contact-message');
+
+  const volunteerForm = document.querySelector('#contact-volunteer');
+
+  messageForm.querySelector('button').addEventListener('click', function(event) {
+    const toEmail = 'fwc789@gmail.com';
+    const fromEmail = messageForm.querySelector('#message-email').value;
+    const fromName = messageForm.querySelector('#message-name').value;
+    const message = messageForm.querySelector('#message-message').value;
+    
+    window.location = `mailto:${toEmail}?subject=Volunteer From Website - ${fromName}&body=${message}`;
+  });
+
+  volunteerForm.querySelector('button').addEventListener('click', function(event) {
+    const toEmail = 'fwc789@gmail.com';
+    const fromEmail = volunteerForm.querySelector('#volunteer-email').value;
+    const fromName = volunteerForm.querySelector('#volunteer-name').value;
+    const checked = volunteerForm.querySelectorAll('.volunteer-type:checked');
+    const extraMessage = volunteerForm.querySelector('#volunteer-message').value;
+
+    let message = 'Hello, I would like to volunteer for the following;%0D%0A%0D%0A';
+
+    checked.forEach(node => {
+      message += `-  ${node.value}%0D%0A`;
+    });
+
+    message += `%0D%0A%0D%0A${extraMessage}%0D%0A%0D%0A`
+
+    message += `From ${fromName}%0D%0ASent from www.friendsofwoodlawncemetery.com`;
+    
+    window.location = `mailto:${toEmail}?subject=Contact From Website - ${fromName}&body=${message}`;
+  });
+
+</script>
 </body>
   
 </html>
