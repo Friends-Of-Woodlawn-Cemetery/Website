@@ -124,7 +124,7 @@
     const fromName = messageForm.querySelector('#message-name').value;
     const message = messageForm.querySelector('#message-message').value;
     
-    window.location = `mailto:${toEmail}?subject=Volunteer From Website - ${fromName}&body=${message}`;
+    window.location = `mailto:${toEmail}?subject=FWC Contact From Website - ${fromName}&body=${message}`;
   });
 
   volunteerForm.querySelector('button').addEventListener('click', function(event) {
@@ -144,7 +144,7 @@
 
     message += `From ${fromName}%0D%0ASent from www.friendsofwoodlawncemetery.org`;
     
-    window.location = `mailto:${toEmail}?subject=Contact From Website - ${fromName}&body=${message}`;
+    window.location = `mailto:${toEmail}?subject=FWC Volunteer From Website - ${fromName}&body=${message}`;
   });
 
 </script>
