@@ -602,12 +602,20 @@ p.readable, ul.readable {
   max-width: 45rem;
 }
 
+.max-w-35 {
+  max-width: 35rem;
+}
+
 .max-w-30 {
   max-width: 30rem;
 }
 
 .max-w-20 {
   max-width: 20rem;
+}
+
+.max-w-15 {
+  max-width: 15rem;
 }
 
 .m-r-1 {
